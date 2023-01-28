@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .home-container{
+    border: 1px solid $white;
+    box-shadow: 2px 7px 49px 3px rgba(103 108 99 / 60%);
+    border-radius: 10px;
+    width: 80%;
+    height: 65%;
+    display: flex;
+    overflow: hidden;
+
+    @include tablet{
+      height: 90%;
+    }
+
+    .sidebar{
+      flex: 1;
+    }
+    .chat{
+      flex: 2;
+    }
+  }
+
+}
+

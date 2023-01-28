@@ -1,0 +1,73 @@
+@import "src/styles/variables";
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-container__wrapper {
+    background-color: $white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .logo{
+      color: $darkContentColor;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .title {
+      color: $darkContentColor;
+      font-size: 12px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .input-file{
+        display: none;
+      }
+
+      label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 14px;
+        color: $darkContentColor;
+        gap: 10px;
+        opacity: 0.6;
+
+        img{
+          width: 40px;
+        }
+      }
+    }
+
+    input{
+      padding: 15px;
+      border: none;
+      border-bottom: 1px solid $mainColor;
+      width: 250px;
+      &::placeholder {
+        color: $placeholderColor;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+
+  p{
+    color: $darkContentColor;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+}

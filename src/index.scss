@@ -1,0 +1,18 @@
+@import "styles/variables";
+@import "styles/blocks/home";
+@import "styles/blocks/login";
+@import "styles/blocks/search";
+@import "styles/blocks/navbar";
+@import "styles/blocks/chat";
+@import "styles/blocks/messages";
+@import "styles/blocks/userChat";
+@import "styles/blocks/input-messages";
+@import "styles/common/ui";
+
+body{
+  margin: 0;
+  background-color: $mainColor;
+}
+
+
+

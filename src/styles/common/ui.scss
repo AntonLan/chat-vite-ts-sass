@@ -1,0 +1,24 @@
+@import "src/styles/variables";
+
+
+button {
+  background-color: $btnColor;
+  color: $white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar {
+  background-color: $listChatsColor;
+  position: relative;
+}
+
+.error {
+  text-align: center;
+  max-width: 200px;
+}
+
+

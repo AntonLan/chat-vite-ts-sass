@@ -1,0 +1,24 @@
+@import "src/styles/variables";
+
+.chat{
+  .chat-info{
+    padding: 10px;
+    height: 50px;
+    background-color: $lightColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $placeholderColor;
+
+    .chat-icons{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

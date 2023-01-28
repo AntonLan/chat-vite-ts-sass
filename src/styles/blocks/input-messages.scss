@@ -1,0 +1,39 @@
+@import "src/styles/variables";
+
+
+.input-messages {
+  height: 50px;
+  background-color: $white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: $darkContentColor;
+    font-size: 18px;
+
+    &::placeholder {
+      color: $placeholderColor;
+    }
+  }
+
+
+  .send {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input{
+      display: none;
+    }
+
+    img {
+      cursor: pointer;
+      width: 24px;
+    }
+  }
+}

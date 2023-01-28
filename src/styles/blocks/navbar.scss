@@ -1,0 +1,48 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: $darkColor;
+  height: 50px;
+  padding: 10px;
+  justify-content: space-between;
+  color: $messagesBackground;
+
+  .logo {
+    font-weight: bold;
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      background-color: $messagesBackground;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    button {
+      background-color: $darkContentColor;
+      color: $messagesBackground;
+      font-size: 10px;
+      border: none;
+
+      @include tablet{
+        position: absolute;
+        bottom: 10px;
+      }
+    }
+  }
+
+}
+
